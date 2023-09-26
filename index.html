@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="style.css">
+	<title>Librarier</title>
+</head>
+<body>
+	<main class="main-container">
+		<section class="add">
+			<h2 class="head-title">Add New Book</h2>
+			<form id="input-book">
+				<div class="input-container">
+					<label for="title" class="input-label">Title</label>
+					<input id="title" type="text" class="input-field" required>
+				</div>
+				<div class="input-container">
+					<label for="author" class="input-label">Author</label>
+					<input id="author" type="text" class="input-field" required>
+				</div>
+				<div class="input-container">
+					<label for="year" class="input-label">Year</label>
+					<input id="year" type="text" class="input-field" required>
+				</div>
+				<div class="input-check">
+					<label for="read" class="label-check">Already Read</label>
+					<input id="read" type="checkbox" class="field-check" value="true">
+				</div>
+				<input id="submit-btn" class="btn-submit" type="submit" value="Submit" name="Submit">
+			</form>
+		</section>
+		<section class="book-container">
+			<h2 class="head-title">BookShelf</h2>
+			<div class="unread-container card">
+				<h2 class="card-title">Unread</h2>
+				<div class="item-container card" id="unRead"></div>
+			</div>
+			<div class="already-container card">
+				<h2 class="card-title">Already Read</h2>
+				<div class="item-container card" id="alrRead"></div>
+			</div>
+		</section>
+
+	</main>
+	<script src="script.js"></script>
+</body>
+</html>
